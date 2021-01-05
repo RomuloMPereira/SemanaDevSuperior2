@@ -29,6 +29,7 @@ public class Order implements Serializable{
 	private Instant moment;
 	private OrderStatus status;
 	
+	//O pedido guardará as informações dos produtos
 	@ManyToMany
 	@JoinTable(name = "tb_order_product",
 			joinColumns = @JoinColumn(name = "order_id"),
